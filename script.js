@@ -1,11 +1,11 @@
-var paragraph = document.getElementById('xss');
+let parent = document.parent;
+let paragraph = parent.document.getElementById('xss');
 
 function xssHover() {
 	console.log(document.cookie);
 }
-// Check if the element exists
+
 if (paragraph) {
-    // Add text to the <p> element
 	paragraph.addEventListener('mouseover', xssHover);
 	paragraph.textContent = "Hello";
 }
