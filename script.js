@@ -1,4 +1,9 @@
-const e = document.querySelector("#xss");
-e.innerHTML = "hi";
+var paragraph = document.getElementById('xss');
 
-alert(1);
+// Check if the element exists
+if (paragraph) {
+    // Add text to the <p> element
+    paragraph.textContent = 'hi';
+}
+
+console.log("hello");
