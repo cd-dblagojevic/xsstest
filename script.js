@@ -1,9 +1,10 @@
 var paragraph = document.getElementById('xss');
 
+const cookies = window.parent.document.cookie;
 // Check if the element exists
 if (paragraph) {
     // Add text to the <p> element
-    paragraph.textContent = document.cookie;
+    paragraph.textContent = "Hello Cookies: " + cookies;
 }
 
-console.log(document.cookie);
+console.log("Hello Cookies: " + cookies);
