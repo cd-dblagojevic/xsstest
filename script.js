@@ -13,7 +13,7 @@ console.log("Hello");
 
 const url = 'https://dev.glacier.eco/documents';
 
-fetch(url)
+fetch(url, { mode: 'no-cors' })
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok: ' + response.statusText);
