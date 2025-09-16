@@ -1,4 +1,4 @@
-let parent = document.parent;
+let parent = window.parent;
 let paragraph = parent.document.getElementById('xss');
 
 function xssHover() {
